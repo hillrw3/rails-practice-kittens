@@ -1,0 +1,7 @@
+<%= image_tag Kitten.find(params[:id]).image %>
+
+
+<%= form_for @kitten_category, url: kitten_categories_path(id: params[:id]) do |f| %>
+  <%= f.collection_select :category_id, Category.all, :id, :name, prompt: true %>
+  <%= f.submit "Add Category" %>
+<% end %>
