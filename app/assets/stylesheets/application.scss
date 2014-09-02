@@ -84,3 +84,18 @@ main {
 .kitten {
   margin-bottom: 1em;
 }
+
+.red {
+  color: red;
+}
+
+.kitten-category-selector {
+
+  * {
+    display: inline-block;
+    float: left;
+  }
+
+  input[type=submit] { background-color: #2B79E7 }
+
+}
